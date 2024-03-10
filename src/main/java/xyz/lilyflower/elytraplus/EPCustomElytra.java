@@ -56,6 +56,10 @@ public class EPCustomElytra extends ElytraItem implements FabricElytraItem {
                     texture = new Identifier("elytras-plus", "textures/entity/elytra/" + stack.getItem().getTranslationKey().replace("item.elytras-plus.", "") + ".png");
                 }
 
+                if (stack.getName().toString().startsWith("Suspicious ")) {
+                    texture = new Identifier("elytras-plus", "textures/entity/elytra/" + stack.getItem().getTranslationKey().replace("item.elytras-plus.", "") + "_suspicious.png");
+                }
+
                 matrixStack.push();
                 matrixStack.translate(0.0D, 0.0D, 0.125D);
                 getContextModel().copyStateTo(this.elytra);
