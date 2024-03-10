@@ -44,20 +44,22 @@ public class EPCustomElytra extends ElytraItem implements FabricElytraItem {
             ItemStack stack = livingEntity.getEquippedStack(EquipmentSlot.CHEST);
             if (stack.isIn(ElytrasPlus.ELYTRAS) && !stack.isOf(Items.ELYTRA)) {
                 Identifier texture;
+                String name = stack.getItem().getTranslationKey().replace("item.elytras-plus.", "");
+
                 if (livingEntity instanceof AbstractClientPlayerEntity abstractClientPlayerEntity) {
                     if (abstractClientPlayerEntity.canRenderElytraTexture() && abstractClientPlayerEntity.getElytraTexture() != null) {
                         texture = abstractClientPlayerEntity.getElytraTexture();
                     } else if (abstractClientPlayerEntity.canRenderCapeTexture() && abstractClientPlayerEntity.getCapeTexture() != null && abstractClientPlayerEntity.isPartVisible(PlayerModelPart.CAPE)) {
                         texture = abstractClientPlayerEntity.getCapeTexture();
                     } else {
-                        texture = new Identifier("elytras-plus", "textures/entity/elytra/" + stack.getItem().getTranslationKey().replace("item.elytras-plus.", "") + ".png");
+                        texture = new Identifier("elytras-plus", "textures/entity/elytra/" + name + ".png");
                     }
                 } else {
-                    texture = new Identifier("elytras-plus", "textures/entity/elytra/" + stack.getItem().getTranslationKey().replace("item.elytras-plus.", "") + ".png");
+                    texture = new Identifier("elytras-plus", "textures/entity/elytra/" + name + ".png");
                 }
 
-                if (stack.getName().toString().startsWith("Suspicious ")) {
-                    texture = new Identifier("elytras-plus", "textures/entity/elytra/" + stack.getItem().getTranslationKey().replace("item.elytras-plus.", "") + "_suspicious.png");
+                if (stack.getName().getString().equals("Suspicious " + stack.getItem().getName().getString())) {
+                    texture = new Identifier("elytras-plus", "textures/entity/elytra/" + name + "_suspicious.png");
                 }
 
                 matrixStack.push();
