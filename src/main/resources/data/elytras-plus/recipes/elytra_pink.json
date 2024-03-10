@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "dyedElytra",
+  "ingredients": [
+    {
+      "tag": "elytras-plus:elytra"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    }
+  ],
+  "result": {
+    "item": "elytras-plus:elytra_pink"
+  }
+}

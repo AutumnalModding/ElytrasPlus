@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "elytras-plus",
+    "version": "${version}",
+    "name": "Elytras+",
+    "description": "Adds new elytras - one for every dye colour, and four special ones.",
+    "authors": [
+        "Lilirine"
+    ],
+    "contact": {
+        "sources": "https://github.com/RPMYT/elytras-plus"
+    },
+    "license": "GPLv3",
+    "icon": "assets/elytras-plus/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "xyz.lilyflower.elytraplus.ElytrasPlus"
+        ],
+        "client": [
+            "xyz.lilyflower.elytraplus.EPClient"
+        ]
+    },
+    "mixins": [
+        "elytras-plus.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.7",
+        "minecraft": "~1.20.1",
+        "java": ">=17",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}

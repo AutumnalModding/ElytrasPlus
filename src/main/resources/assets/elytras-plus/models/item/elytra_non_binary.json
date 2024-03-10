@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "elytras-plus:item/elytra_non_binary"
+  }
+}

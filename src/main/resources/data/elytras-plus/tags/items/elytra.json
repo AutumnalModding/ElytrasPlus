@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:elytra",
+    "elytras-plus:elytra_white",
+    "elytras-plus:elytra_orange",
+    "elytras-plus:elytra_magenta",
+    "elytras-plus:elytra_light_blue",
+    "elytras-plus:elytra_yellow",
+    "elytras-plus:elytra_lime",
+    "elytras-plus:elytra_pink",
+    "elytras-plus:elytra_gray",
+    "elytras-plus:elytra_light_gray",
+    "elytras-plus:elytra_cyan",
+    "elytras-plus:elytra_purple",
+    "elytras-plus:elytra_blue",
+    "elytras-plus:elytra_brown",
+    "elytras-plus:elytra_green",
+    "elytras-plus:elytra_red",
+    "elytras-plus:elytra_black",
+    "elytras-plus:elytra_lesbian",
+    "elytras-plus:elytra_non_binary",
+    "elytras-plus:elytra_pride",
+    "elytras-plus:elytra_trans"
+  ]
+}
